@@ -3,6 +3,7 @@
  - [ ] zerotier somehow gives the network a wrong IP Range. A restart always fixes this
  - [ ] xow because xbox
  - [ ] ssh config
+ - [ ] cmus
 
 ### Install Packages
 `yay -S --needed --norebuild --nocleanmenu --answerclean N --nodiffmenu $(<softwarelist.txt)`
