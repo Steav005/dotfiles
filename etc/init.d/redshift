@@ -1,0 +1,21 @@
+#!/sbin/openrc-run
+
+depend() {
+    need xdm lightdm 
+}
+
+start_pre() {
+    DISPLAY="${DISPLAY:-:0}"
+    XAUTHORITY="/run/lightdm/root/${DISPLAY}"
+}
+
+start() {
+    ebegin "Starting redshift"
+    start-stop-daemon --start --env DISPLAY=${DISPLAY} --env XAUTHORITY=${XAUTHORITY} \
+        --make-pidfile --background --exec /usr/bin/redshift-gtk \
+	--pidfile /run/redshift.pid -- -c /etc/redshift.conf
+    eend $?
+}
+
+command="/usr/bin/redshift-gtk"
+pidfile="/run/redshift.pid"

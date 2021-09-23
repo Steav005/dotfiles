@@ -1,0 +1,10 @@
+# /etc/hosts
+# Static table lookup for hostnames.
+# See hosts(5) for details.
+
+127.0.0.1   localhost
+::1         localhost
+127.0.1.1   neesama
+10.0.0.2    imouto
+10.3.0.0    tenshi
+10.4.0.0    weebpi
