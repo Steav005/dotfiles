@@ -2,6 +2,7 @@
  - [ ] Make some of the stuff which is started by i3 into services for OpenRC
  - [ ] zerotier somehow gives the network a wrong IP Range. A restart always fixes this
  - [ ] xow because xbox
+ - [ ] ssh config
 
 ### Install Packages
 `yay -S --needed --norebuild --nocleanmenu --answerclean N --nodiffmenu $(<softwarelist.txt)`
