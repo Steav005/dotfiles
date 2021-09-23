@@ -1,3 +1,8 @@
+### Todos
+ - [ ] Make some of the stuff which is started by i3 into services for OpenRC
+ - [ ] zerotier somehow gives the network a wrong IP Range. A restart always fixes this
+ - [ ] xow because xbox
+
 ### Install Packages
 `yay -S --needed --norebuild --nocleanmenu --answerclean N --nodiffmenu $(<softwarelist.txt)`
 
@@ -34,3 +39,10 @@ MAKEFLAGS="-j$(nproc)"
 BUILDENV=(!distcc color ccache check !sign)
 ```
 
+### OpenRC
+After linking all the user scripts in /etc/init.d/
+- **Lightdm**: `sudo rc-update add lightdm default`
+- **Redshift**: `sudo rc-update add redshift default`
+- **Docker**: `sudo rc-update add docker default`
+- **Nordvpn**: `sudo rc-update add nordvpnd default`
+- **Zerotier**: `sudo rc-update add zerotier-one default`
