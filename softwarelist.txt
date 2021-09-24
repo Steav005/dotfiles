@@ -18,6 +18,8 @@ connman-openrc
 dhcpcd
 net-tools
 nordvpn-openrc
+openssh
+openssh-openrc
 
 easyeffects
 pamixer
@@ -43,6 +45,7 @@ lightdm-openrc
 
 betterlockscreen
 dbus-python
+dunst
 i3-gaps-next-git
 notify-send.sh
 numlockx
@@ -50,7 +53,6 @@ picom-git
 polybar
 python-gobject
 rofi
-wired
 
 bat
 bottom
@@ -59,6 +61,7 @@ efibootmgr
 code
 exa
 fd
+ffmpeg
 fish
 fzf
 grep
@@ -70,6 +73,7 @@ neofetch
 ripgrep
 skim
 starship
+strace
 xow-git
 zerotier-one
 
@@ -77,6 +81,7 @@ alacritty
 bitwarden
 brave-bin
 cmus
+cmusfm
 gnome-disk-utility
 gnome-screenshot
 lxappearance
@@ -110,9 +115,10 @@ bibata-cursor-theme
 papirus-icon-theme
 nordic-theme-git
 
-rustup
 jetbrains-toolbox
 npm
+perl
+rustup
 
 thunar
 thunar-archive-plugin

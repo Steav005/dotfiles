@@ -29,3 +29,6 @@ Display:
 
 ### ENV Variables
 `sudo ln -sf /home/autumnal/dotfiles/etc/environment /etc/environment`
+
+### SSH
+`sudo ln -sf /home/autumnal/dotfiles/etc/ssh/sshd_config /etc/ssh/sshd_config`

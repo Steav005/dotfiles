@@ -5,6 +5,12 @@ Delete preexisting directories before linking
 ### Alacritty
 `ln -sf /home/autumnal/dotfiles/dotconfig/alacritty /home/autumnal/.config/alacritty`
 
+### Cmus
+`ln -sf /home/autumnal/dotfiles/dotconfig/cmus /home/autumnal/.config/cmus`
+
+### Dunst
+`ln -sf /home/autumnal/dotfiles/dotconfig/dunst /home/autumnal/.config/dunst`
+
 ### Easyeffects
 `ln -sf /home/autumnal/dotfiles/dotconfig/easyeffects /home/autumnal/.config/easyeffects`
 

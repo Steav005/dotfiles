@@ -43,11 +43,20 @@ exec --no-startup-id nm-applet
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 #volume up
-bindsym XF86AudioRaiseVolume exec pamixer -i 5 && notify-send.sh -r 1000 -t 2000 volume: $(pamixer --get-volume)%
+bindsym XF86AudioRaiseVolume exec pamixer -i 5 && dunstify -u low \
+        "Volume: `pamixer --get-volume`%" \
+        -h string:x-canonical-private-synchronous:volume \
+        -h int:value:"`pamixer --get-volume`"
 #volume down
-bindsym XF86AudioLowerVolume exec pamixer -d 5 && notify-send.sh -r 1000 -t 2000 volume: $(pamixer --get-volume)%
+bindsym XF86AudioLowerVolume exec pamixer -d 5 && dunstify -u low \
+        "Volume: `pamixer --get-volume`%" \
+        -h string:x-canonical-private-synchronous:volume \
+        -h int:value:"`pamixer --get-volume`" 
 #mute
-bindsym XF86AudioMute exec pamixer -t && notify-send.sh -r 1000 -t 2000 mute: $(pamixer --get-mute)!
+bindsym XF86AudioMute exec pamixer -t && dunstify -u low \
+        "Mute: `pamixer --get-mute`" \
+        -h string:x-canonical-private-synchronous:volume \
+        -h int:value:"`pamixer --get-volume`"
 
 bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioPause exec playerctl pause
@@ -322,7 +331,8 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id easyeffects --gapplication-service
 
 # Notify daemon
-exec_always --no-startup-id wired
+#exec_always --no-startup-id wired
+exec_always --no-startup-id dunst
 
 # Wallpaper
 exec_always --no-startup-id betterlockscreen -w

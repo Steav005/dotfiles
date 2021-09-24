@@ -1,9 +1,10 @@
 #!/sbin/openrc-run
 
 depend() {
-    provide net
+    need net
     use network
-    before firewall netmount
+#    before firewall netmount
+#    after connmand
 }
 
 command="/usr/sbin/zerotier-one"
