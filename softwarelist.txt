@@ -16,6 +16,8 @@ openrc
 connman-gtk
 connman-openrc
 dhcpcd
+net-tools
+nordvpn-openrc
 
 easyeffects
 pamixer
@@ -110,6 +112,7 @@ nordic-theme-git
 
 rustup
 jetbrains-toolbox
+npm
 
 thunar
 thunar-archive-plugin
