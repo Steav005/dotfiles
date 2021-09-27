@@ -1,0 +1,3 @@
+# /etc/autofs/auto.master
+
+/-		/etc/autofs/auto.master.d/tenshi.ssh		--timeout=0 --ghost

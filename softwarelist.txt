@@ -13,6 +13,10 @@ ntfs-3g
 elogind-openrc
 openrc
 
+autofs
+autofs-openrc
+fuse
+fuse-openrc
 networkmanager
 networkmanager-openrc
 nm-applet
@@ -21,6 +25,7 @@ net-tools
 nordvpn-openrc
 openssh
 openssh-openrc
+sshfs
 
 bluedevil
 bluez
@@ -104,6 +109,7 @@ docker-openrc
 
 fcitx5
 fcitx5-configtool
+fcitx5-gtk
 fcitx5-lua
 fcitx5-mozc
 fcitx5-nord

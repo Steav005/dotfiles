@@ -1,6 +1,3 @@
-### TODOS
-- [ ] fcitx5 hotkey con strg+shift entfernen
-
 ### Install Packages
 `yay -S --needed --norebuild --nocleanmenu --answerclean N --nodiffmenu $(<softwarelist.txt)`
 
@@ -39,10 +36,12 @@ BUILDENV=(!distcc color ccache check !sign)
 
 ### OpenRC
 After linking all the user scripts in /etc/init.d/
+- **AutoFS**: `sudo rc-update add autofs default`
 - **Bluetooth**: `sudo rc-update add bluetoothd default`
-- **Network Manager**: `sudo rc-update add NetworkManager default`
 - **Docker**: `sudo rc-update add docker default`
+- **Fuse**: `sudo rc-update add fuse default`
 - **Lightdm**: `sudo rc-update add lightdm default`
+- **Network Manager**: `sudo rc-update add NetworkManager default`
 - **Nordvpn**: `sudo rc-update add nordvpnd default`
 - **SSH**: `sudo rc-update add sshd default`
 - **XOW**: `sudo rc-update add xow default`

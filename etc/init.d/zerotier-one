@@ -7,6 +7,5 @@ depend() {
 }
 
 command="/usr/sbin/zerotier-one"
-#command_args="-U"
 command_background="yes"
 pidfile="/run/$RC_SVCNAME.pid"
