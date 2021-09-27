@@ -16,6 +16,9 @@
 ### Lightdm
 `sudo ln -sf /home/autumnal/dotfiles/etc/lightdm/lightdm.conf /etc/lightdm/lightdm.conf`
 
+### Modprobe
+`sudo ln -sf /home/autumnal/dotfiles/etc/modprobe.d/hid_apple.conf /etc/modprobe.d/hid_apple.conf`
+
 ### OpenRC
 `sudo ln -sf /home/autumnal/dotfiles/etc/rc.conf /etc/rc.conf`
 

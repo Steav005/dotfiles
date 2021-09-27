@@ -19,7 +19,7 @@ fuse
 fuse-openrc
 networkmanager
 networkmanager-openrc
-nm-applet
+network-manager-applet
 dhcpcd
 net-tools
 nordvpn-openrc
