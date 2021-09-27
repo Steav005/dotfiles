@@ -1,12 +1,12 @@
 #!/sbin/openrc-run
 
 depend() {
-    need net
+    provide net
     use network
-#    before firewall netmount
-#    after connmand
+    before firewall netmount 
 }
 
 command="/usr/sbin/zerotier-one"
+#command_args="-U"
 command_background="yes"
 pidfile="/run/$RC_SVCNAME.pid"

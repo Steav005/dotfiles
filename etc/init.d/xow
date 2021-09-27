@@ -1,0 +1,5 @@
+#!/sbin/openrc-run
+
+command="/usr/bin/xow"
+command_background="yes"
+pidfile="/run/$RC_SVCNAME.pid"

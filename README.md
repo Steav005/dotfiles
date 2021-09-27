@@ -1,30 +1,28 @@
-### Todos
- - [ ] Make some of the stuff which is started by i3 into services for OpenRC
-  - [ ] Especially Pipewire
- - [ ] xow for xbox
+### TODOS
+- [ ] fcitx5 hotkey con strg+shift entfernen
 
 ### Install Packages
 `yay -S --needed --norebuild --nocleanmenu --answerclean N --nodiffmenu $(<softwarelist.txt)`
-
 
 ### Groups
 #### Add User Groups
 `groupadd -r <group>`
 - autologin
-- nordvpn
 - docker
+- nordvpn
 
 #### Add User to Groups
 `gpasswd -a autumnal <group>`
-- wheel
-- disk
 - audio
-- input
-- video
-- power
 - autologin
-- nordvpn
+- disk
 - docker
+- input
+- nordvpn
+- power
+- rtkit
+- video
+- wheel
 
 ### Makepkg.conf
 ```conf
@@ -41,10 +39,11 @@ BUILDENV=(!distcc color ccache check !sign)
 
 ### OpenRC
 After linking all the user scripts in /etc/init.d/
-- **Connman**: `sudo rc-update add connmand default`
+- **Bluetooth**: `sudo rc-update add bluetoothd default`
+- **Network Manager**: `sudo rc-update add NetworkManager default`
 - **Docker**: `sudo rc-update add docker default`
 - **Lightdm**: `sudo rc-update add lightdm default`
 - **Nordvpn**: `sudo rc-update add nordvpnd default`
-- **Redshift**: `sudo rc-update add redshift default`
 - **SSH**: `sudo rc-update add sshd default`
+- **XOW**: `sudo rc-update add xow default`
 - **Zerotier**: `sudo rc-update add zerotier-one default`

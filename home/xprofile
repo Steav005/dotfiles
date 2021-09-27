@@ -1,0 +1,26 @@
+# /home/autumnal/.xprofile
+
+# Pipewire
+/usr/bin/pipewire &
+/usr/bin/pipewire-pulse &
+/usr/bin/pipewire-media-session &
+
+# Easyeffects
+easyeffects --gapplication-service &
+
+# Redshift
+# Protect your eyes kids
+/usr/bin/redshift-gtk &
+
+# IME
+fcitx5 -d &
+
+# Numlock
+numlockx &
+
+# Notify daemon
+#exec_always --no-startup-id wired
+dunst &
+
+# NetworkManager Applet
+nm-applet &

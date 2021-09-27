@@ -1,5 +1,8 @@
 # Etc Stuff
 
+### OpenRC
+`sudo ln -sf /home/autumnal/dotfiles/etc/rc.conf /etc/rc.conf`
+
 ### X11
 Keyboard:  
 `sudo ln -sf /home/autumnal/dotfiles/etc/X11/xorg.conf.d/00-keyboard.conf /etc/X11/xorg.conf.d/00-keyboard.conf`
@@ -14,7 +17,7 @@ Display:
 `sudo ln -sf /home/autumnal/dotfiles/etc/lightdm/lightdm.conf /etc/lightdm/lightdm.conf`
 
 ### Init.d OpenRC
-- **Redshift**: `sudo ln -sf /home/autumnal/dotfiles/etc/init.d/redshift /etc/init.d/redshift`
+- **XOW**: `sudo ln -sf /home/autumnal/dotfiles/etc/init.d/xow /etc/init.d/xow`
 - **Zerotier**: `sudo ln -sf /home/autumnal/dotfiles/etc/init.d/zerotier-one /etc/init.d/zerotier-one`
 
 ### Redshift

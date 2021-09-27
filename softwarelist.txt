@@ -13,13 +13,19 @@ ntfs-3g
 elogind-openrc
 openrc
 
-connman-gtk
-connman-openrc
+networkmanager
+networkmanager-openrc
+nm-applet
 dhcpcd
 net-tools
 nordvpn-openrc
 openssh
 openssh-openrc
+
+bluedevil
+bluez
+bluez-openrc
+bluez-utils
 
 easyeffects
 pamixer
@@ -90,6 +96,7 @@ steam-native-runtime
 
 discord-canary
 element-desktop
+telegram-desktop
 thunderbird-artix
 
 docker-compose
