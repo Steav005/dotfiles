@@ -3,6 +3,9 @@
 ### Autofs
 `sudo ln -sf /home/autumnal/dotfiles/etc/autofs /etc/autofs`
 
+### Bluetooth
+`sudo ln -sf /home/autumnal/dotfiles/etc/bluetooth /etc/bluetooth`
+
 ### ENV Variables
 `sudo ln -sf /home/autumnal/dotfiles/etc/environment /etc/environment`
 
@@ -10,6 +13,7 @@
 `sudo ln -sf /home/autumnal/dotfiles/etc/hosts-neesama /etc/hosts`
 
 ### Init.d OpenRC
+- **autofs**: `sudo ln -sf /home/autumnal/dotfiles/etc/init.d/autofs /etc/init.d/autofs`
 - **XOW**: `sudo ln -sf /home/autumnal/dotfiles/etc/init.d/xow /etc/init.d/xow`
 - **Zerotier**: `sudo ln -sf /home/autumnal/dotfiles/etc/init.d/zerotier-one /etc/init.d/zerotier-one`
 

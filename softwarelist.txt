@@ -69,10 +69,15 @@ bat
 bottom
 ccache
 efibootmgr
+calc
+clang
+cmake
 code
+dialog
 exa
 fd
 ffmpeg
+file-roller
 fish
 fzf
 grep
@@ -80,11 +85,16 @@ gvfs
 gzip
 htop
 libusb-git
+lrzip
 neofetch
+p7zip
 ripgrep
 skim
+squashfs-tools
 starship
 strace
+unace
+unrar
 xow-git
 zerotier-one
 
@@ -95,8 +105,19 @@ cmus
 cmusfm
 gnome-disk-utility
 gnome-screenshot
+mpv
+libreoffice-fresh
 lxappearance
+qalculate-gtk
 spotify
+texstudio
+zathura
+
+libretro-dolphin
+libretro-mupen64plus-next
+libretro-parallel-n64
+libretro-ppsspp
+retroarch
 steam-native-runtime
 
 discord-canary
@@ -106,6 +127,10 @@ thunderbird-artix
 
 docker-compose
 docker-openrc
+
+cups
+cups-openrc
+cups-pdf
 
 fcitx5
 fcitx5-configtool
@@ -133,7 +158,19 @@ npm
 perl
 rustup
 
+ffmpegthumbnailer
+libgsf
+libgepub
+libopenraw
 thunar
 thunar-archive-plugin
 thunar-media-tags-plugin
 thunar-volman
+tumbler
+
+vim
+neovim
+vim-css-color-git
+vim-grammarous
+vim-toml-git
+vim-nix-git

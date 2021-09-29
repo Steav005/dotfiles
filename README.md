@@ -38,6 +38,7 @@ BUILDENV=(!distcc color ccache check !sign)
 After linking all the user scripts in /etc/init.d/
 - **AutoFS**: `sudo rc-update add autofs default`
 - **Bluetooth**: `sudo rc-update add bluetoothd default`
+- **Cups**: `sudo rc-update add cupsd default`
 - **Docker**: `sudo rc-update add docker default`
 - **Fuse**: `sudo rc-update add fuse default`
 - **Lightdm**: `sudo rc-update add lightdm default`
