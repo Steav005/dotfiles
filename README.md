@@ -34,6 +34,31 @@ MAKEFLAGS="-j$(nproc)"
 BUILDENV=(!distcc color ccache check !sign)
 ```
 
+### Filesystem
+I like `btrfs` but I do not use it properly (yet)
+
+#### Partitions
+1. 512MB: EFI System (FAT)
+2. Rest: Linux Filesystem (BTRFS)
+
+### Bootloader
+Who needs GRUB or systemd-boot anyways ?  
+`sudo efibootmgr -g -c --disk /dev/nvme0n1 --part 1 --label "Artix" --loader /vmlinuz-linux  --unicode "root=PARTUUID=3783aa39-1494-904f-a8ba-06127e518ee0 rw rootfs=btrfs initrd=/amd-ucode.img initrd=/initramfs-linux.img" -e 3 --verbose`
+- Select disk-device for the `disk` argument  
+**Do not select a partition here**
+- for `part` select the part number of the boot partition of the disk (starts @1)
+- Use w/e `label` you want
+- for `loader` use the vmlinuz-linux file for w/e kernel you are using
+- Unicode
+  - Insert the PARTUUID of the root partition
+  - Change the rootfs variable to your desired filesystem-type
+  - Change ucode [according to your cpu](https://wiki.archlinux.org/title/Microcode#EFISTUB)
+  - Change initramfs according to your linux kernel
+- `e`: EDD version is not detected for my mainboard, so I had to manually declare version 3.0
+
+### Background
+`betterlockscreen  -u ~/Pictures/Wallpaper/pic1.png --display 1 -u ~/Pictures/Wallpaper/pic2.png`
+
 ### OpenRC
 After linking all the user scripts in /etc/init.d/
 - **AutoFS**: `sudo rc-update add autofs default`

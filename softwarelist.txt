@@ -117,6 +117,7 @@ libretro-dolphin
 libretro-mupen64plus-next
 libretro-parallel-n64
 libretro-ppsspp
+lib32-libepoxy
 retroarch
 steam-native-runtime
 
