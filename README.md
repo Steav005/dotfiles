@@ -38,8 +38,8 @@ BUILDENV=(!distcc color ccache check !sign)
 I like `btrfs` but I do not use it properly (yet)
 
 #### Partitions
-1. 512MB: EFI System (FAT)
-2. Rest: Linux Filesystem (BTRFS)
+1. `/boot` 512MB: EFI System (FAT) 
+2. `/` Rest: Linux Filesystem (BTRFS) 
 
 ### Bootloader
 Who needs GRUB or systemd-boot anyways ?  
