@@ -1,5 +1,6 @@
 search-history
 cmusfm.socket
+cmusfm.cache
 cmusfm.conf
 lib.pl
 cache

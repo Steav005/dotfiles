@@ -8,6 +8,9 @@
 # Easyeffects
 easyeffects --gapplication-service &
 
+# playerctl daemon
+playerctld &
+
 # Redshift
 # Protect your eyes kids
 /usr/bin/redshift-gtk &
@@ -21,6 +24,3 @@ numlockx &
 # Notify daemon
 #exec_always --no-startup-id wired
 dunst &
-
-# NetworkManager Applet
-nm-applet &

@@ -1,0 +1,1 @@
+/media/tenshi    -fstype=nfs,rw,bg,timeo=10,retry=0,soft,intr,IdentityFile=/home/autumnal/.ssh/neesama_rsa tenshi:/

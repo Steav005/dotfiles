@@ -1,4 +1,0 @@
-# /etc/autofs/auto.master.d/tenshi.ssh
-
-/media/tenshi     -fstype=fuse,rw,allow_other,IdentityFile=/home/autumnal/.ssh/neesama_rsa :sshfs\#autumnal@tenshi\:/
-

@@ -1,0 +1,4 @@
+#/media/weebpi	-fstype=nfs,rw,soft,intr,IdentityFile=/home/autumnal/.ssh/neesama_rsa weebpi:/Autumnal
+#/media/share    -fstype=nfs,rw,soft,intr,IdentityFile=/home/autumnal/.ssh/neesama_rsa weebpi:/Share
+#/media/media    -fstype=nfs,rw,soft,intr,IdentityFile=/home/autumnal/.ssh/neesama_rsa weebpi:/Media
+/media/weebpi    -fstype=nfs,rw,bg,timeo=10,retry=0,soft,intr,IdentityFile=/home/autumnal/.ssh/neesama_rsa weebpi:/

@@ -58,10 +58,10 @@ bindsym XF86AudioMute exec pamixer -t && dunstify -u low \
         -h string:x-canonical-private-synchronous:volume \
         -h int:value:"`pamixer --get-volume`"
 
-bindsym XF86AudioPlay exec playerctl play-pause
-bindsym XF86AudioPause exec playerctl pause
-bindsym XF86AudioNext exec playerctl next
-bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86AudioPlay exec python3 ~/.config/polybar/scripts/empris.py playpause
+bindsym XF86AudioPause exec python3 ~/.config/polybar/scripts/empris.py pauseall
+bindsym XF86AudioNext exec exec python3 ~/.config/polybar/scripts/empris.py next
+bindsym XF86AudioPrev exec exec python3 ~/.config/polybar/scripts/empris.py prev
 
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -84,7 +84,10 @@ bindsym $mod+t exec rofi -no-config -no-lazy-grab -show window -modi window \
         -theme ~/.config/polybar/scripts/rofi/nord.rasi
 
 # Password menu
-bindsym $mod+p exec bwmenu -- -no-config -theme ~/.config/polybar/scripts/rofi/nord.rasi
+#bindsym $mod+p exec bwmenu -- -no-config -theme ~/.config/polybar/scripts/rofi/nord.rasi
+
+# Music Player menu
+bindsym $mod+p exec python3 ~/.config/polybar/scripts/empris.py
 
 # change focus
 #bindsym $mod+j focus left

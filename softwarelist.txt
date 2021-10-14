@@ -82,11 +82,15 @@ fish
 fzf
 grep
 gvfs
+gvfs-goa
+gvfs-mtp
+gvfs-nfs
 gzip
 htop
 libusb-git
 lrzip
 neofetch
+nfs-utils
 p7zip
 ripgrep
 skim
