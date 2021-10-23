@@ -1,4 +1,4 @@
 # /etc/autofs/auto.master
 
-/-		/etc/autofs/auto.master.d/weebpi.nfs            --timeout=200
-/-              /etc/autofs/auto.master.d/tenshi.nfs            --timeout=200
+/-		/etc/autofs/auto.master.d/weebpi.nfs            --timeout=0
+/-              /etc/autofs/auto.master.d/tenshi.nfs            --timeout=0

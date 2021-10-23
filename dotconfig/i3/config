@@ -21,6 +21,9 @@ font pango:Roboto 10
 default_border pixel 1
 smart_borders no_gaps
 
+# Icons
+#title_window_icon yes
+
 # Gaps
 #gaps inner 4
 gaps inner 12 
@@ -88,6 +91,12 @@ bindsym $mod+t exec rofi -no-config -no-lazy-grab -show window -modi window \
 
 # Music Player menu
 bindsym $mod+p exec python3 ~/.config/polybar/scripts/empris.py
+
+# Next Sink
+# Copied from polybar config
+# But with other "" and ''
+bindsym $mod+o exec "~/.config/polybar/scripts/pulseaudio-control.bash --sink-nicknames-from 'node.name' --sink-blacklist 'alsa_output.pci-0000_0a_00.1.hdmi-stereo,alsa_output.pci-0000_09_00.1.hdmi-stereo,alsa_output.pci-0000_09_00.1.hdmi-stereo-extra2,easyeffects_sink,alsa_output.pci-0000_0a_00.1.hdmi-stereo-extra2' next-sink"
+
 
 # change focus
 #bindsym $mod+j focus left

@@ -39,9 +39,15 @@
 ### SSH
 `sudo ln -sf /home/autumnal/dotfiles/etc/ssh/sshd_config /etc/ssh/sshd_config`
 
+### Syncthing
+`sudo ln -sf /home/autumnal/dotfiles/etc/conf.d/syncthing /etc/conf.d/syncthing`
+
 ### X11
 Keyboard:  
 `sudo ln -sf /home/autumnal/dotfiles/etc/X11/xorg.conf.d/00-keyboard.conf /etc/X11/xorg.conf.d/00-keyboard.conf`
 
 Display:  
 `sudo ln -sf /home/autumnal/dotfiles/etc/X11/xorg.conf.d/11-display-clz.conf /etc/X11/xorg.conf.d/11-display.conf`
+
+### XDG
+`sudo ln -sf /home/autumnal/dotfiles/etc/xdg/mimeapps.list /etc/xdg/mimeapps.list`
