@@ -173,17 +173,25 @@ def play_pause():
 
 
 def go_next():
+    playing = False
     for player in playerlist.players:
         if player.playing:
+            playing = True
             os.popen(f"playerctl -p {player.name} next").read()
             return
+    if not playing:
+        os.popen("playerctl next").read()
 
 
 def go_prev():
+    playing = False
     for player in playerlist.players:
         if player.playing:
+            playing = True
             os.popen(f"playerctl -p {player.name} previous").read()
             return
+    if not playing:
+        os.popen("playerctl previous").read()
 
 
 def start_autopause():
